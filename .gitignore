@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+
+# Compiled output
+dist/
+*.class
+*.jar
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output
+build/
+out/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Operating System files
+.DS_Store
+Thumbs.db
