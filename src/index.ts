@@ -6,11 +6,12 @@ import { loggerMiddleware } from './api-logs';
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware
-app.use(loggerMiddleware);
 
 app.use(cors());
 app.use(bodyParser.json());
+
+// Middleware
+app.use(loggerMiddleware);
 
 app.get('/', (request: Request, response: Response) => {
     return response.json({ message: 'Hello World!' });
